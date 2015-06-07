@@ -1,6 +1,6 @@
 <?php
 /* Set e-mail recipient */
-$myemail = "dlwndghk94@berkeley.edu";
+$myemail = "94dlwndghk@gmail.com";
 
 /* Check all form inputs using check_input function */
 $name = check_input($_POST['inputName'], "Your Name");
@@ -19,7 +19,7 @@ $subject = "Someone has sent you a message";
 
 $message = "
 
-Someone has sent you a message using your contac form:
+Someone has sent you a message using your contact form:
 
 Name: $name
 Email: $email
@@ -34,7 +34,7 @@ $message
 mail($myemail, $subject, $message);
 
 /* Redirect visitor to the thank you page */
-header('Location: http://sceneusamarketinggroup.com/contact-success.html');
+header('Location: http://address-of-confirmation-page.html');
 exit();
 
 /* Functions we used */
