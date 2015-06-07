@@ -34,7 +34,7 @@ $message
 mail($myemail, $subject, $message);
 
 /* Redirect visitor to the thank you page */
-header('Location: http://www.sceneusamarketinggroup.com/contact-success.html');
+header('Location: http://sceneusamarketinggroup.com/contact-success.html');
 exit();
 
 /* Functions we used */
