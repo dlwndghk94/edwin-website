@@ -10,17 +10,17 @@ $message = check_input($_POST['inputMessage'], "Your Message");
 
 /* If e-mail is not valid show error message */
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
-{
-show_error("Invalid e-mail address");
-}
+	{
+	show_error("Invalid e-mail address");
+	}
 /* Let's prepare the message for the e-mail */
 
-$subject = "Someone has sent you a message";
+	$subject = "Someone has sent you a message";
 
-$message = "
+	$message = "
 
 Someone has sent you a message using your contact form:
-
+	
 Name: $name
 Email: $email
 Subject: $subject
@@ -34,7 +34,7 @@ $message
 mail($myemail, $subject, $message);
 
 /* Redirect visitor to the thank you page */
-header('Location: http://sceneusamarketinggroup.com/contact-success.html');
+header('Location: http://www.google.com');
 exit();
 
 /* Functions we used */
@@ -49,7 +49,6 @@ show_error($problem);
 }
 return $data;
 }
-
 function show_error($myError)
 {
 ?>
